@@ -7,6 +7,22 @@ packages:
   gitUrl: https://github.com/Munatri
   gitUsername: Munatri
   gitBranch: main
+- name: CachingGitPackage
+  gitServerName: GithubOrigin
+  gitUrl: https://github.com/Munatri
+  gitUsername: Munatri
+  gitBranch: main
+services:
+- serviceName: project.vrt.integrations:d1
+  packages:
+  - name: VRTProject
+    version: "1.0"
+  - name: CachingGitPackage
+    version: 10.15.0.0.674
+- serviceName: pub.date:currentNanoTime
+  packages:
+  - name: WmPublic
+    version: 12.0.0.0.1020
 configurationVariables:
   jdbc.SAP TxStore Pool.maxConns: "10"
   jdbcfunc.SAPTxStore.failFastMode: false

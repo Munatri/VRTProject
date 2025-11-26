@@ -9,17 +9,19 @@
   <null name="startup_services"/>
   <null name="shutdown_services"/>
   <null name="replication_services"/>
-  <null name="requires"/>
+  <record name="requires" javaclass="com.wm.util.Values">
+    <value name="CachingGitPackage">10.15.0.0.674</value>
+  </record>
   <null name="listACL"/>
   <value name="webappLoad">yes</value>
   <value name="reloadWithDependentPackage">yes</value>
-  <value name="build">3</value>
+  <value name="build">4</value>
   <null name="description"/>
   <value name="created_date">26-11-2025 03:19:24 GMT</value>
   <null name="extendedProperties"/>
   <null name="target_server_version"/>
   <value name="isProjectPackage">true</value>
-  <value name="lastUpdated">2025-11-26T03:20:45.765424041Z</value>
+  <value name="lastUpdated">2025-11-26T05:46:55.041393525Z</value>
   <value name="wmProjectId">fldbd54ffb318348f28f214ed6aeb663e6</value>
   <value name="creator">Munatri Baruah</value>
 </Values>
